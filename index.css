@@ -501,6 +501,9 @@ body {
   .card-container {
     grid-template-columns: 1fr;
   }
+  .card {
+    height: 100%;
+  }
   .card-wrapper-left {
     justify-content: center;
   }
@@ -509,7 +512,7 @@ body {
   }
   .how-it-works-wrapper img {
     width: 100%;
-    height: max-content;
+    height: 100%;
   }
   .contact-wrapper .form-container {
     min-width: 100%;
