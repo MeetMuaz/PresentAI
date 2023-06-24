@@ -93,13 +93,12 @@ body {
   justify-content: center;
 }
 .header-wrapper .video-wrapper {
-  /* height: 385px; */
   width: 587px;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
 }
-.play {
+.play-pause {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -109,12 +108,27 @@ body {
   border: none;
   outline: none;
 }
+.fullscreen {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+}
 .video-wrapper video {
   height: 100%;
   width: 100%;
   outline: none;
   border-radius: 16px;
-  object-fit: contain;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
 }
 .header-wrapper p {
   font-size: 1.2rem;

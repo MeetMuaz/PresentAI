@@ -10,9 +10,20 @@ for (let i = 0; i < plus.length; i++) {
 }
 
 const vid = document.getElementById("vid");
+const playButton = document.getElementById("play-button");
+const pauseButton = document.getElementById("pause-button");
 
 vid.addEventListener("loadedmetadata", () => {
+    pauseButton.classList.add("hidden");
     vid.currentTime =96;
+})
+
+const full = document.getElementById("fullscreen");
+vid.addEventListener("mouseover", () => {
+    full.classList.add("show");
+})
+vid.addEventListener("mouseout", () => {
+    full.classList.remove("show");
 })
 
 function playOrPause() {
@@ -20,10 +31,16 @@ function playOrPause() {
     if (vid.paused && vid.currentTime === 96) {
         vid.currentTime = 0;
         vid.play();
+        playButton.classList.add("hidden");
+        pauseButton.classList.remove("hidden");
     } else if (vid.paused) {
         vid.play();
+        playButton.classList.add("hidden");
+        pauseButton.classList.remove("hidden");
     } else {
         vid.pause();
+        playButton.classList.remove("hidden");
+        pauseButton.classList.add("hidden");
     }
 
 }
