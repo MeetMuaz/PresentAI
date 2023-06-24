@@ -18,14 +18,6 @@ vid.addEventListener("loadedmetadata", () => {
     vid.currentTime =96;
 })
 
-const full = document.getElementById("fullscreen");
-vid.addEventListener("mouseover", () => {
-    full.classList.add("show");
-})
-vid.addEventListener("mouseout", () => {
-    full.classList.remove("show");
-})
-
 function playOrPause() {
 
     if (vid.paused && vid.currentTime === 96) {

@@ -116,7 +116,6 @@ body {
   z-index: 10;
   right: 10px;
   bottom: 10px;
-  display: none;
 }
 .video-wrapper video {
   height: 100%;
@@ -126,9 +125,6 @@ body {
 }
 .hidden {
   display: none;
-}
-.show {
-  display: block;
 }
 .header-wrapper p {
   font-size: 1.2rem;
