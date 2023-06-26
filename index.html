@@ -13,7 +13,7 @@
 
     <!-- navigation section -->
     <nav>
-        <div class="navigation-container">
+        <div class="navigation-container" id="nav-top">
             <div class="navigation-wrapper">
                 <a href="#">
                     <svg width="203" height="73" viewBox="0 0 203 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,8 +42,8 @@
                 <div class="purple-btn">
                     <a href="#contact">Get in touch 👋</a>
                 </div>
-                <button class="mobile-toggle">
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="mobile-toggle" id="mobile-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" id="open">
                         <path
                             d="M21.2358 7.83826H3.23584C2.82584 7.83826 2.48584 7.49826 2.48584 7.08826C2.48584 6.67826 2.82584 6.33826 3.23584 6.33826H21.2358C21.6458 6.33826 21.9858 6.67826 21.9858 7.08826C21.9858 7.49826 21.6458 7.83826 21.2358 7.83826Z"
                             fill="#292D32" />
@@ -54,12 +54,32 @@
                             d="M21.2358 17.8383H3.23584C2.82584 17.8383 2.48584 17.4983 2.48584 17.0883C2.48584 16.6783 2.82584 16.3383 3.23584 16.3383H21.2358C21.6458 16.3383 21.9858 16.6783 21.9858 17.0883C21.9858 17.4983 21.6458 17.8383 21.2358 17.8383Z"
                             fill="#292D32" />
                     </svg>
-                    </span>
 
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" id="close">
+                        <path
+                            d="M12.2358 22.8383C6.30584 22.8383 1.48584 18.0183 1.48584 12.0883C1.48584 6.15826 6.30584 1.33826 12.2358 1.33826C18.1658 1.33826 22.9858 6.15826 22.9858 12.0883C22.9858 18.0183 18.1658 22.8383 12.2358 22.8383ZM12.2358 2.83826C7.13584 2.83826 2.98584 6.98826 2.98584 12.0883C2.98584 17.1883 7.13584 21.3383 12.2358 21.3383C17.3358 21.3383 21.4858 17.1883 21.4858 12.0883C21.4858 6.98826 17.3358 2.83826 12.2358 2.83826Z"
+                            fill="#292D32" />
+                        <path
+                            d="M9.40582 15.6682C9.21582 15.6682 9.02583 15.5982 8.87583 15.4482C8.58583 15.1582 8.58583 14.6782 8.87583 14.3882L14.5358 8.72824C14.8258 8.43824 15.3058 8.43824 15.5958 8.72824C15.8858 9.01824 15.8858 9.49824 15.5958 9.78824L9.93582 15.4482C9.79582 15.5982 9.59582 15.6682 9.40582 15.6682Z"
+                            fill="#292D32" />
+                        <path
+                            d="M15.0658 15.6682C14.8758 15.6682 14.6858 15.5982 14.5358 15.4482L8.87583 9.78824C8.58583 9.49824 8.58583 9.01824 8.87583 8.72824C9.16583 8.43824 9.64582 8.43824 9.93582 8.72824L15.5958 14.3882C15.8858 14.6782 15.8858 15.1582 15.5958 15.4482C15.4458 15.5982 15.2558 15.6682 15.0658 15.6682Z"
+                            fill="#292D32" />
+                    </svg>
                 </button>
             </div>
         </div>
     </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#works" class="mobile-link">How it works</a></li>
+            <li><a href="#features" class="mobile-link">Key features</a></li>
+            <li><a href="#about" class="mobile-link">About Us</a></li>
+            <li><a href="#contact" class="mobile-link" >Contact Us</a></li>
+            <a href="#contact" class="mobile-link  mobile-link-special">Get in touch 👋</a>
+        </ul>
+    </div>
 
     <!-- header section -->
     <section>
@@ -92,7 +112,7 @@
                         </button>
                         <!-- absolute properties -->
                         <video id="vid">
-                            <source src="asset/4_6041978564004288581.mp4" type="video/mp4" preload="metadata">
+                            <source src="asset/4_6041978564004288581.mp4" type="video/mp4">
                             <source src="movie.ogg" type="video/ogg">
                             Your browser does not support the video tag.
                         </video>
