@@ -1,3 +1,4 @@
+AOS.init();
 const mobileBtn = document.getElementById('mobile-btn');
 const mobileNav = document.getElementById('mobile-nav');
 const open = document.getElementById('open');
@@ -142,4 +143,25 @@ contactForm.addEventListener('submit', (e) => {
         messageInput.focus();
         return;
     }
+
+    // Get the form data
+    var formData = {
+      firstname: firstnameInput.value,
+      lastname: lastnameInput.value,
+      email: emailInput.value,
+      phone: phoneInput.value,
+      message: messageInput.value,
+    };
+    
+    // Send the email using EmailJS
+    emailjs.send('service_dtgq318', 'template_l9cam6l', formData, 'cB5oIKDqnVjYpdg93')
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        // Optionally, display a success message to the user
+        alert('Email sent successfully!');
+      }, function(error) {
+        console.log('FAILED...', error);
+        // Optionally, display an error message to the user
+        alert('Failed to send email. Please try again later.');
+      });
 })
