@@ -17,6 +17,7 @@ ul {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #efefef;
+  overflow-x: hidden;
 }
 
 /* navigation section */
@@ -24,7 +25,7 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
   height: 80.1px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +137,12 @@ body {
   justify-content: center;
 }
 .header-wrapper .video-wrapper {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(141, 100, 230, 0.5) 0.01%,
+    rgba(248, 248, 248, 0.245) 100%
+  );
   width: 587px;
   border-radius: 16px;
   overflow: hidden;

@@ -164,4 +164,7 @@ contactForm.addEventListener('submit', (e) => {
         // Optionally, display an error message to the user
         alert('Failed to send email. Please try again later.');
       });
+
+    // Clear form
+    firstnameInput.value, lastnameInput.value, emailInput.value, phoneInput.value, messageInput.value = "";
 })
