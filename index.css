@@ -17,7 +17,6 @@ ul {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #efefef;
-  overflow-x: hidden;
 }
 
 /* navigation section */
@@ -541,6 +540,13 @@ body {
 
 .footer-link-blink {
   display: none !important;
+}
+
+.header-wrapper,
+.how-it-works-wrapper,
+.about-wrapper,
+.contact-wrapper {
+  overflow: hidden;
 }
 
 @media (max-width: 960px) {
