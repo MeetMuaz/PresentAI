@@ -147,7 +147,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-.play-pause {
+/* .play-pause {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -165,9 +165,9 @@ body {
   z-index: 10;
   right: 10px;
   bottom: 10px;
-}
-.video-wrapper video {
-  height: 100%;
+} */
+.video-wrapper iframe {
+  height: 312px;
   width: 100%;
   outline: none;
   border-radius: 16px;

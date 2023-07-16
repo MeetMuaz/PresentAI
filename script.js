@@ -37,50 +37,50 @@ for (let i = 0; i < plus.length; i++) {
     
 }
 
-const vid = document.getElementById("vid");
-const playButton = document.getElementById("play-button");
-const pauseButton = document.getElementById("pause-button");
+// const vid = document.getElementById("vid");
+// const playButton = document.getElementById("play-button");
+// const pauseButton = document.getElementById("pause-button");
 
-// start video from 96 seconds
-vid.addEventListener("loadedmetadata", () => {
-    pauseButton.classList.add("hidden");
-    vid.currentTime =96;
-})
+// // start video from 96 seconds
+// vid.addEventListener("loadedmetadata", () => {
+//     pauseButton.classList.add("hidden");
+//     vid.currentTime =96;
+// })
 
-// pause and play video
-function playOrPause() {
+// // pause and play video
+// function playOrPause() {
 
-    if (vid.paused && vid.currentTime === 96) {
-        vid.currentTime = 0;
-        vid.play();
-        playButton.classList.add("hidden");
-        pauseButton.classList.remove("hidden");
-    } else if (vid.paused) {
-        vid.play();
-        playButton.classList.add("hidden");
-        pauseButton.classList.remove("hidden");
-    } else {
-        vid.pause();
-        playButton.classList.remove("hidden");
-        pauseButton.classList.add("hidden");
-    }
+//     if (vid.paused && vid.currentTime === 96) {
+//         vid.currentTime = 0;
+//         vid.play();
+//         playButton.classList.add("hidden");
+//         pauseButton.classList.remove("hidden");
+//     } else if (vid.paused) {
+//         vid.play();
+//         playButton.classList.add("hidden");
+//         pauseButton.classList.remove("hidden");
+//     } else {
+//         vid.pause();
+//         playButton.classList.remove("hidden");
+//         pauseButton.classList.add("hidden");
+//     }
 
-}
+// }
 
-// show full scren
-function fullscreen() {
+// // show full scren
+// function fullscreen() {
 
-    if (vid.requestFullscreen) {
-        vid.requestFullscreen();
-    } else if (vid.mozRequestFullScreen) { // Firefox
-        vid.mozRequestFullScreen();
-    } else if (vid.webkitRequestFullscreen) { // Chrome, Safari and Opera
-        vid.webkitRequestFullscreen();
-    } else if (vid.msRequestFullscreen) { // IE/Edge
-        vid.msRequestFullscreen();
-    }
+//     if (vid.requestFullscreen) {
+//         vid.requestFullscreen();
+//     } else if (vid.mozRequestFullScreen) { // Firefox
+//         vid.mozRequestFullScreen();
+//     } else if (vid.webkitRequestFullscreen) { // Chrome, Safari and Opera
+//         vid.webkitRequestFullscreen();
+//     } else if (vid.msRequestFullscreen) { // IE/Edge
+//         vid.msRequestFullscreen();
+//     }
 
-}
+// }
 
 const contactForm = document.getElementById('contact-form');
 const firstnameInput = document.getElementById('firstname');
